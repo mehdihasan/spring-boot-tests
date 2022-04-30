@@ -15,7 +15,18 @@
      3. It touches the file system 
      4. It can't run at the same time as any of your other unit tests 
      5. You have to do special things to your environment (such as editing config files) to run it.
-3. [How Spring Boot’s Autoconfiguration Work](https://www.marcobehler.com/guides/spring-boot)
-4. [JUnit 5 User Guide](https://junit.org/junit5/docs/current/user-guide/)
-5. [Five JUnit 5 Features You Might Not Know Yet](https://rieckpil.de/five-junit-5-features-you-might-not-know-yet/)
-6. [Mockito](https://site.mockito.org/)
+3. [Maven Setup For Testing Java Applications](https://rieckpil.de/maven-setup-for-testing-java-applications/)
+   1. Maven Archetype
+   2. Maven Surefire & Failsafe Plugins 
+   3. Maven built-in lifecycles
+      1. `validate`: validate that our project setup is correct (e.g., we have the correct Maven folder structure)
+      2. `compile`: compile our source code with javac 
+      3. `test`: run our unit tests 
+      4. `package`: build our project in its distributable format (e.g., JAR or WAR)
+      5. `verify`: run our integration tests and further checks (e.g., the OWASP dependency check)
+      6. `install`: install the distributable format into our local repository (~/.m2 folder)
+      7. `deploy`: deploy the project to a remote repository (e.g., Maven Central or a company hosted Nexus Repository/Artifactory)
+4. [How Spring Boot’s Autoconfiguration Work](https://www.marcobehler.com/guides/spring-boot)
+5. [JUnit 5 User Guide](https://junit.org/junit5/docs/current/user-guide/)
+6. [Five JUnit 5 Features You Might Not Know Yet](https://rieckpil.de/five-junit-5-features-you-might-not-know-yet/)
+7. [Mockito](https://site.mockito.org/)

@@ -31,3 +31,5 @@
 6. [JUnit 5 User Guide](https://junit.org/junit5/docs/current/user-guide/)
 7. [Five JUnit 5 Features You Might Not Know Yet](https://rieckpil.de/five-junit-5-features-you-might-not-know-yet/)
 8. [Mockito](https://site.mockito.org/)
+9. [Spring Boot Test Slices: Overview and Usage](https://rieckpil.de/spring-boot-test-slices-overview-and-usage/)
+10. [recommended-resources-for-testing-java-applications](https://rieckpil.de/recommended-resources-for-testing-java-applications/)

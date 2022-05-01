@@ -24,7 +24,11 @@ public class TodosClient {
 
     public List<Todo> fetchAllTodos() {
         return this.restTemplate
-                .exchange("/todos", HttpMethod.GET, null,  new ParameterizedTypeReference<List<Todo>>() {})
+                .exchange("/todos"
+                        , HttpMethod.GET
+                        , null
+                        ,  new ParameterizedTypeReference<List<Todo>>() {}
+                )
                 .getBody();
     }
 

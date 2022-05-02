@@ -1,4 +1,4 @@
-package me.mh.springtest.testslice;
+package me.mh.springtest.testslice.web;
 
 import me.mh.springtest.customer.Customer;
 import me.mh.springtest.customer.CustomerController;

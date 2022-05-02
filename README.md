@@ -37,3 +37,14 @@ For scenarios where we don't want to run our integration test (but still our uni
 ```bash
 mvn verify -DskipITs
 ```
+
+## [Slice Annotations](https://rieckpil.de/spring-boot-test-slices-overview-and-usage/)
+
+### @WebMvcTest
+This annotation creates a Spring TestContext with only relevant Spring MVC (model-view-controller) components:
+- @Controller and @RestController
+- @ControllerAdvice
+- @JsonComponent
+- Converter, Filter, WebMvcConfigurer
+
+### 

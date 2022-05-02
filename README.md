@@ -47,4 +47,8 @@ This annotation creates a Spring TestContext with only relevant Spring MVC (mode
 - @JsonComponent
 - Converter, Filter, WebMvcConfigurer
 
-### 
+### @DataJpaTest
+Spring TestContext contains the following components:
+- @Repository or any class extending a Spring Data repository
+- EntityManager and TestEntityManager
+- DataSource

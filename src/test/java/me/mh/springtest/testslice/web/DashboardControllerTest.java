@@ -31,7 +31,8 @@ public class DashboardControllerTest {
                 .andExpect(MockMvcResultMatchers.status().isOk())
                 .andExpect(MockMvcResultMatchers.view().name("dashboard"))
                 .andExpect(MockMvcResultMatchers.model().attributeExists("message"))
-                .andExpect(MockMvcResultMatchers.model().attribute("analyticsGraph", Matchers.arrayContaining(23, 43)));
+                .andExpect(MockMvcResultMatchers.model().attribute("analyticsGraph"
+                        , Matchers.arrayContaining(23, 43)));
     }
 
 }

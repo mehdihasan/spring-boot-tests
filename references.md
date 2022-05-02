@@ -33,3 +33,4 @@
 8. [Mockito](https://site.mockito.org/)
 9. [Spring Boot Test Slices: Overview and Usage](https://rieckpil.de/spring-boot-test-slices-overview-and-usage/)
 10. [recommended-resources-for-testing-java-applications](https://rieckpil.de/recommended-resources-for-testing-java-applications/)
+11. [Spring Data JPA Persistence Layer Tests With @DataJpaTest](https://rieckpil.de/test-your-spring-boot-jpa-persistence-layer-with-datajpatest/)

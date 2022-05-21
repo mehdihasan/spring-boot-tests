@@ -82,7 +82,9 @@ public class CustomerControllerTest {
 
     @Test
     void canCreateNewCustomer() throws Exception {
-        when(customerService.storeNewCustomer(new Customer(1L,"Oroni", ZonedDateTime.now())))
+        when(customerService
+                .storeNewCustomer(new Customer("Oroni"
+                        , ZonedDateTime.parse("2022-01-01T14:00:00+06:00"))))
                 .thenReturn(1L);
 
         this.mockMvc
@@ -91,7 +93,7 @@ public class CustomerControllerTest {
                         .with(SecurityMockMvcRequestPostProcessors.user("mehdi").roles("ADMIN"))
                         .with(SecurityMockMvcRequestPostProcessors.csrf())
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content("{\"name\": \"Oroni\",\"joinedAt\": \"2022-01-01T14:00:00+06:00\"}")
+                        .content("{\"name\": \"Oroni\", \"joinedAt\": \"2022-01-01T14:00:00+06:00\"}")
                 )
                 .andExpect(MockMvcResultMatchers.status().isCreated())
                 .andExpect(MockMvcResultMatchers.header().exists("Location"))

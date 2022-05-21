@@ -50,5 +50,8 @@ This annotation creates a Spring TestContext with only relevant Spring MVC (mode
 ### @DataJpaTest
 Spring TestContext contains the following components:
 - @Repository or any class extending a Spring Data repository
-- EntityManager and TestEntityManager
+- EntityManager and TestEntityManager ??
 - DataSource
+
+> Nevertheless, it's still worthing testing the entire JPA entity lifecycle by storing an entity, flushing the EntityManager, and retrieving the entity from the database again. This way, we ensure that Hibernate can destruct and construct our entity objects.
+

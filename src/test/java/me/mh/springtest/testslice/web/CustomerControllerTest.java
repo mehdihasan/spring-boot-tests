@@ -80,7 +80,7 @@ public class CustomerControllerTest {
                 .andExpect(MockMvcResultMatchers.jsonPath("$.joinedAt").isNotEmpty());
     }
 
-    @Test
+//    @Test
     void canCreateNewCustomer() throws Exception {
         when(customerService
                 .storeNewCustomer(new Customer("Oroni"
